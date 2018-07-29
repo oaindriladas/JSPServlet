@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>SkillSet</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>Admin</servlet-name>
+    <servlet-class>com.niit.project.controller.Admin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Admin</servlet-name>
+    <url-pattern>/SkillSet/Admin</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>InsertRow</servlet-name>
+    <servlet-class>com.niit.project.controller.NewUser</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InsertRow</servlet-name>
+    <url-pattern>/SkillSet/NewUser</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>HRpage</servlet-name>
+    <servlet-class>com.niit.project.controller.HRcontroller</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HRpage</servlet-name>
+    <url-pattern>/SkillSet/HRcontroller</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Deletepage</servlet-name>
+    <servlet-class>com.niit.project.controller.delete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Deletepage</servlet-name>
+    <url-pattern>/SkillSet/delete</url-pattern>
+  </servlet-mapping>
+</web-app>
